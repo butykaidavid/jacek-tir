@@ -73,6 +73,8 @@ Modern, díjnyertes dizájnú weboldal a Jacek TIR Parking kamion parkoló szám
 
 ## 🚀 Használat
 
+### Helyi fejlesztés
+
 1. **Böngészőben való megnyitás**:
    ```bash
    # Nyisd meg az index.html fájlt bármelyik modern böngészőben
@@ -84,14 +86,74 @@ Modern, díjnyertes dizájnú weboldal a Jacek TIR Parking kamion parkoló szám
    # Python 3
    python -m http.server 8000
    
-   # Node.js (ha van telepítve http-server)
-   npx http-server
+   # Node.js
+   npx serve .
    ```
 
 3. **Live Server** (VS Code kiterjesztés):
    - Telepítsd a Live Server kiterjesztést
    - Jobb klikk az index.html-re
    - "Open with Live Server"
+
+### 🚢 Vercel Deployment
+
+#### Első alkalommal:
+
+1. **Vercel CLI telepítése** (opcionális):
+   ```bash
+   npm i -g vercel
+   ```
+
+2. **Deploy három módon**:
+
+   **A) Vercel Dashboard (GUI) - Legegyszerűbb**:
+   - Menj a [vercel.com](https://vercel.com) oldalra
+   - Jelentkezz be GitHub/GitLab/Bitbucket fiókkal
+   - Kattints "Add New" → "Project"
+   - Importáld a repository-t
+   - Vercel automatikusan felismeri a statikus oldalt
+   - Kattints "Deploy" gombra
+   - ✅ Kész! Az oldal él néhány másodperc alatt
+
+   **B) Vercel CLI**:
+   ```bash
+   # Első deployment
+   vercel
+   
+   # Production deployment
+   vercel --prod
+   ```
+
+   **C) GitHub Integration (Ajánlott)**:
+   - Push-old a kódot GitHub-ra
+   - Vercel automatikusan deploy-ol minden commit után
+   - Preview URL minden branch-hez
+   - Production deploy a main/master branch-re
+
+3. **Custom domain beállítása**:
+   - Vercel Dashboard → Project Settings → Domains
+   - Add hozzá: `www.jacektirparking.hu`
+   - Kövesd a DNS beállítási útmutatót
+
+#### Deployment konfigurációk:
+
+A projekt tartalmazza a `vercel.json` fájlt az optimális beállításokkal:
+- ✅ Statikus oldal hosting
+- ✅ Cache optimalizáció (CSS, JS, képek)
+- ✅ Biztonsági headerek
+- ✅ Automatikus HTTPS
+- ✅ Globális CDN
+
+#### Környezeti változók (ha szükséges):
+
+Ha később hozzáadsz backend funkciókat:
+```bash
+# .env.local fájlban
+CONTACT_API_KEY=your_api_key
+EMAIL_SERVICE=your_email_service
+```
+
+Ezeket a Vercel Dashboard-on állítsd be: Project Settings → Environment Variables
 
 ## 📱 Reszponzív Breakpointok
 

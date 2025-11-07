@@ -1,0 +1,19 @@
+{
+  "name": "jacek-tir-parking",
+  "version": "1.0.0",
+  "description": "Prémium kamion parkoló weboldal - Hajlamjon, Borsod megye",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "tir-parking",
+    "kamion-parkolo",
+    "truck-parking",
+    "hajlamjon",
+    "borsod"
+  ],
+  "author": "Jacek TIR Parking",
+  "license": "MIT"
+}
