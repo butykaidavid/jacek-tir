@@ -1,1 +1,43 @@
-.
+RoadShield Kamion Parkoló
+=========================
+
+Prémium, reszponzív marketing weboldal, amely a RoadShield kamion parkoló szolgáltatásait mutatja be. A projekt célja, hogy lenyűgöző vizuális élményt adjon a fuvarozó cégeknek és sofőröknek, miközben kiemeli a parkoló biztonsági, kényelmi és digitális előnyeit.
+
+Projekt felépítése
+------------------
+
+- `index.html` – Egyoldalas weboldal magyar tartalommal, szekciókra bontva (hero, szolgáltatások, árak, galéria, foglalás, kapcsolat).
+- `assets/css/styles.css` – Egyedi, modern stíluslap változókkal, animációkkal és reszponzív töréspontokkal.
+- `assets/js/main.js` – Navigációs logika, scroll-alapú kiemelés, belépő animációk és űrlap visszajelzések.
+
+Fő funkciók és részletek
+------------------------
+
+- **Sticky navigáció** mobilbarát hamburger menüvel és automatikus aktív menüpont kiemeléssel.
+- **Hős blokk** azonnali foglalási űrlappal, statisztikákkal és CTA gombokkal.
+- **Szolgáltatás & kényelmi csomagok** kártya-alapú megjelenítése, animált belépéssel.
+- **Árazási táblázat** kiemelt ajánlattal, gradient háttérrel.
+- **Galéria és ajánlások** vizuális hitelesség növelésére.
+- **Foglalási űrlap** inline visszajelzéssel, Google Térkép beágyazással.
+- **Lábléc** kapcsolati információkkal, hírlevél feliratkozással és dinamikus évszám frissítéssel.
+
+Használat
+---------
+
+1. Nyisd meg a gyökérkönyvtárban található `index.html` fájlt egy böngészőben.
+2. A stílusok és a JavaScript automatikusan betöltődnek az `assets` mappából.
+
+Testreszabási tippek
+--------------------
+
+- **Színek & tipográfia**: módosítható a `styles.css` fájl tetején definiált CSS változókkal.
+- **Képek**: Unsplash hivatkozások szerepelnek; cseréld le őket saját fotókra az adott `img` elemek `src` attribútumában.
+- **Térkép**: cseréld le az `iframe` beágyazást saját Google Maps vagy más térképszolgáltató kódjára.
+- **Űrlapok**: a jelenlegi beállítás demó jellegű; backend integrációkor állítsd be a `form` `action` és `method` attribútumokat, vagy illeszd API-hoz.
+
+Fejlesztői információk
+----------------------
+
+- A projekt statikus, nincs build lépés.
+- Bármelyik statikus szerverrel (pl. `npx serve`, `python -m http.server`) helyben is kiszolgálható.
+- A `main.js` évente frissíti a lábléc évszámát, és kezeli az animációkat; további interakciók itt adhatók hozzá.
