@@ -1,1 +1,22 @@
-.
+Titan Truck Park
+=================
+
+Egy modern, teljes képernyős weboldal, amely bemutatja a Titan Truck Park prémium kamion parkolóját. A projekt reszponzív, magyar nyelvű tartalommal, dinamikus díjkalkulátorral és interaktív animációkkal készült.
+
+Főbb szekciók
+------------
+- Hero blokk statisztikákkal és vizuális foglaltság kijelzéssel
+- Szolgáltatások és komfort funkciók bemutatása
+- Tarifa váltó éjszakai és havi csomagokkal
+- Vélemények, foglalási kalkulátor, kapcsolat és navigáció
+
+Futtatás
+--------
+1. Klónozd vagy töltsd le a repót.
+2. Nyisd meg az `index.html` fájlt a böngésződben.
+
+Technológiák
+------------
+- Tiszta HTML5
+- Modern CSS (flexbox, grid, reszponzív töréspontok)
+- Vanilla JS (díjkalkulátor, navigáció, scroll animációk)
